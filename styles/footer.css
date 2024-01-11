@@ -1,0 +1,48 @@
+/* The styles in this file will be applied to the content of the footer on the webpage */
+.home-sci {
+  position: absolute;
+  bottom: 4rem;
+  width: 178px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* This style will be applied to the social media link icons */
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--main-color);
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* This is the background of the social media icons when hovered */
+.home-sci a:hover {
+  color: var(--bg-color);
+}
+
+/* This style will be applied to the footer icons at their default state */
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+/* The width of the icons when hovered */
+.home-sci a:hover::before {
+  width: 100%;
+}
