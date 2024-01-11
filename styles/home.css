@@ -107,3 +107,20 @@
 .btn-box .btn:hover::before {
   width: 100%;
 }
+
+/* This style is applied to the right side of the page background */
+.home-imgHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+/* This style will be applied to right side of the homepage */
+.home-imgHover:hover {
+  background: var(--bg-color);
+  opacity: 0.8;
+}
